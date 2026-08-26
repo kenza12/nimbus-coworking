@@ -110,26 +110,6 @@ main {
   line-height: 1.2;
 }
 
-/* SKIP LINK */
-
-.skip-link {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  padding: 8px 16px;
-
-  background-color: var(--color-light);
-  color: var(--color-dark);
-  text-decoration: none;
-
-  transform: translateY(-100%);
-}
-
-.skip-link:focus {
-  transform: translateY(0);
-}
-
 /* COMPONENT STYLES */
 
 /* buttons */
