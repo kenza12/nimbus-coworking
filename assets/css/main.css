@@ -278,8 +278,10 @@ main {
 .site-footer {
   background-color: var(--color-dark);
   color: var(--color-light);
+  text-align: center;
 
   height: 80px;
+  padding: 0px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
