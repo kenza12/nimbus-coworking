@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Nimbus Coworking</title>
+    <meta name="description"
+          content="Book a tour, ask a question or come and see the space. We answer within one working day.">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pages/contact.css">
+
+    <!-- Font Awesome, icons only -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Skip link for keyboard navigation -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Site header: logo and main navigation -->
+    <header class="site-header">
+        <div class="site-header__inner">
+
+            <a class="site-header__logo" href="index.html">
+                <img class="site-header__logo-image"
+                    src="assets/images/logo-nimbus.png"
+                    alt="Nimbus Coworking">
+            </a>
+
+            <!-- Burger button, shown on small screens -->
+            <input class="nav-toggle" type="checkbox" id="nav-toggle">
+            <label class="nav-toggle__label" for="nav-toggle" aria-label="Menu">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </label>
+
+            <nav class="site-nav" aria-label="Main">
+                <ul class="site-nav__list">
+                    <li><a class="site-nav__link" href="spaces.html">Spaces</a></li>
+                    <li><a class="site-nav__link" href="pricing.html">Pricing</a></li>
+                    <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Page intro -->
+        <section class="page-intro">
+            <div class="page-intro__inner">
+                <h1 class="page-intro__title">Come and see the space</h1>
+                <p class="page-intro__text">
+                    Book a tour, claim your free day pass, or just ask us a
+                    question. We answer every message within one working day.
+                </p>
+            </div>
+        </section>
+
+        <!-- Form and contact details side by side -->
+        <section class="contact">
+            <div class="contact__inner">
+
+                <!-- Contact form -->
+                <div class="contact__form-block">
+                    <h2 class="contact__title">Send us a message</h2>
+
+                    <form class="form" action="#" method="post">
+
+                        <div class="form__field">
+                            <label class="form__label" for="name">Your name</label>
+                            <input class="form__input"
+                                   type="text"
+                                   id="name"
+                                   name="name"
+                                   autocomplete="name"
+                                   required>
+                        </div>
+
+                        <div class="form__field">
+                            <label class="form__label" for="email">Email</label>
+                            <input class="form__input"
+                                   type="email"
+                                   id="email"
+                                   name="email"
+                                   autocomplete="email"
+                                   required>
+                        </div>
+
+                        <div class="form__field">
+                            <label class="form__label" for="interest">
+                                What are you looking for?
+                            </label>
+                            <select class="form__select" id="interest" name="interest">
+                                <option value="tour">A tour of the space</option>
+                                <option value="day-pass">A free day pass</option>
+                                <option value="office">A private office</option>
+                                <option value="desk">An open desk</option>
+                                <option value="meeting">A meeting room</option>
+                                <option value="other">Something else</option>
+                            </select>
+                        </div>
+
+                        <div class="form__field">
+                            <label class="form__label" for="message">Message</label>
+                            <textarea class="form__textarea"
+                                      id="message"
+                                      name="message"
+                                      rows="6"
+                                      required></textarea>
+                        </div>
+
+                        <button class="btn" type="submit">Send message</button>
+                    </form>
+                </div>
+
+                <!-- Address, hours and direct contacts -->
+                <div class="contact__details">
+                    <h2 class="contact__title">Other ways to reach us</h2>
+
+                    <ul class="details__list">
+
+                        <li class="details__item">
+                            <i class="details__icon fa-solid fa-location-dot"
+                               aria-hidden="true"></i>
+                            <div>
+                                <h3 class="details__label">Address</h3>
+                                <p class="details__value">
+                                    14 Rue des Ateliers<br>
+                                    13001 Marseille
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="details__item">
+                            <i class="details__icon fa-solid fa-envelope"
+                               aria-hidden="true"></i>
+                            <div>
+                                <h3 class="details__label">Email</h3>
+                                <p class="details__value">
+                                    <a class="details__link"
+                                       href="mailto:hello@nimbus-coworking.com">
+                                        hello@nimbus-coworking.com
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="details__item">
+                            <i class="details__icon fa-solid fa-phone"
+                               aria-hidden="true"></i>
+                            <div>
+                                <h3 class="details__label">Phone</h3>
+                                <p class="details__value">
+                                    <a class="details__link" href="tel:+33491000000">
+                                        +33 4 91 00 00 00
+                                    </a>
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="details__item">
+                            <i class="details__icon fa-solid fa-clock"
+                               aria-hidden="true"></i>
+                            <div>
+                                <h3 class="details__label">Opening hours</h3>
+                                <p class="details__value">
+                                    Monday to Friday, 8am to 8pm<br>
+                                    Saturday, 10am to 6pm<br>
+                                    Members have a key, day and night
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Directions and photo of the entrance -->
+        <section class="finding-us">
+            <div class="finding-us__inner">
+
+                <div class="finding-us__content">
+                    <h2 class="finding-us__title">Finding us</h2>
+                    <p class="finding-us__text">
+                        We are in the old print works on Rue des Ateliers, five
+                        minutes from Vieux-Port metro. Look for the black doors
+                        and the cloud above them.
+                    </p>
+                    <ul class="finding-us__list">
+                        <li>Metro line 1, Vieux-Port, then a 5 minute walk</li>
+                        <li>Bus 82 and 83 stop on Rue de la Republique</li>
+                        <li>Bike racks in the courtyard, showers inside</li>
+                        <li>Paid parking on Place des Ateliers</li>
+                    </ul>
+                </div>
+
+                <!-- Two sizes, the browser loads the lighter one when it fits -->
+                <img class="finding-us__image"
+                     src="assets/images/entrance-800.jpg"
+                     srcset="assets/images/entrance-800.jpg 800w,
+                             assets/images/entrance-1536.jpg 1536w"
+                     sizes="(max-width: 767px) 100vw, 50vw"
+                     alt="The black entrance doors of Nimbus on Rue des Ateliers">
+
+            </div>
+        </section>
+
+        <!-- Free day pass offer -->
+        <section class="cta">
+            <div class="cta__inner">
+                <div class="cta__content">
+                    <h2 class="cta__title">Not ready to write yet?</h2>
+                    <p class="cta__text">
+                        Walk in any weekday morning. Coffee is on the house.
+                    </p>
+                </div>
+                <a class="btn btn--outline" href="spaces.html">See the spaces</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__text">Copyright © 2026 Nimbus Coworking</p>
+    </footer>
+
+</body>
+</html>
