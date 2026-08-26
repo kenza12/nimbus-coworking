@@ -6,24 +6,50 @@
   <title>Nimbus Coworking | Prices</title>
 </head>
 <body>
-  <header></header>
-  <main>
+  <header class="site-header">
+    <div class="site-header__inner">
+
+        <a class="site-header__logo" href="index.html">
+            <img class="site-header__logo-image"
+                src="assets/images/logo-nimbus.png"
+                alt="Nimbus Coworking">
+        </a>
+
+        <!-- Burger button, shown on small screens -->
+        <input class="nav-toggle" type="checkbox" id="nav-toggle">
+        <label class="nav-toggle__label" for="nav-toggle" aria-label="Menu">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+        </label>
+
+        <nav class="site-nav" aria-label="Main">
+            <ul class="site-nav__list">
+                <li><a class="site-nav__link" href="spaces.html">Spaces</a></li>
+                <li><a class="site-nav__link" href="pricing.html">Pricing</a></li>
+                <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+  </header>
+  <main id="main">
     <h1>Our prices of coworking</h1>
-    <section>
-      <h2>Individual plans</h2>
-      <article>
-        <h4>Day pass</h4>
-        <p>From <strong>20€/day</strong></p>
-        <ul>
+    <section class="plans">
+      <h2 class="plans__auditory">Individual plans</h2>
+      <article class="plan">
+        <h4 class="plan__title">Day pass</h4>
+        <p class="plan__price">From <strong>20€/day</strong></p>
+        <ul class="plan__benefits">
           <li>Flexible workspace</li>
           <li>Wi-Fi</li>
           <li>Coffee</li>
         </ul>
       </article>
-      <article>
-        <h4>Flex</h4>
-        <p><strong>50€/month</strong></p>
-        <ul>
+      <article class="plan">
+        <h4 class="plan__title">Flex</h4>
+        <p class="plan__price"><strong>50€/month</strong></p>
+        <ul class="plan__benefits">
           <li>8 days/month</li>
           <li>Flexible workspace</li>
           <li>Meeting room 1 hour/month</li>
@@ -31,10 +57,10 @@
           <li>Coffee</li>
         </ul>
       </article>
-      <article>
-        <h4>Unlimited</h4>
-        <p><strong>200€/mont</strong>h</p>
-        <ul>
+      <article class="plan">
+        <h4 class="plan__title">Unlimited</h4>
+        <p class="plan__price"><strong>200€/mont</strong>h</p>
+        <ul class="plan__benefits">
           <li>Unlimited access during working hours</li>
           <li>Fixed workspace</li>
           <li>Meeting room 8 hours/month</li>
@@ -43,22 +69,22 @@
         </ul>
       </article>
     </section>
-    <section>
-      <h2>Team plans</h2>
-      <article>
-        <h4>Private office for day</h4>
-        <p>From <strong>100€</strong></p>
-        <ul>
+    <section class="plans">
+      <h2 class="plans__auditory">Team plans</h2>
+      <article class="plan">
+        <h4 class="plan__title">Private office for day</h4>
+        <p class="plan__price">From <strong>100€</strong></p>
+        <ul class="plan__benefits">
           <li>From 5 workspaces in a private office</li>
           <li>Whiteboard</li>
           <li>Wi-Fi</li>
           <li>Coffee</li>
         </ul>
       </article>
-      <article>
-        <h4>Unlimited</h4>
-        <p>From <strong>1000€</strong></p>
-        <ul>
+      <article class="plan">
+        <h4 class="plan__title">Unlimited</h4>
+        <p class="plan__price">From <strong>1000€</strong></p>
+        <ul class="plan__benefits">
           <li>From 5 workspaces in a private office</li>
           <li>Whiteboard</li>
           <li>Meeting room 20 hours/month</li>
@@ -71,6 +97,8 @@
       Choose your plan and <a href="contact.html">contact us</a>
     </p>
   </main>
-  <footer></footer>
+  <footer class="site-footer">
+    <p class="site-footer__text">Copyright © 2026 Nimbus Coworking</p>
+</footer>
 </body>
 </html>
