@@ -211,12 +211,11 @@ main {
   color: var(--color-light);
 }
 
-/* burger menu */
-.nav-toggle {
+.nav-toggle { /* for burger menu */
   display: none;
 }
 
-.nav-toggle__label {
+.nav-toggle__label { /* for burger menu */
   display: none;
 }
 
@@ -273,4 +272,15 @@ main {
   .site-header__inner {
     flex-wrap: wrap;
   }
+}
+
+/* footer */
+.site-footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -231,13 +231,3 @@
     flex-direction: column;
   }
 }
-
-.site-footer {
-  background-color: var(--color-dark);
-  color: var(--color-light);
-
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
