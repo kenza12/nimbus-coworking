@@ -14,7 +14,7 @@
 <body>
 
     <!-- Skip link for keyboard navigation -->
-    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- <a class="skip-link" href="#main">Skip to content</a> -->
 
     <!-- Site header: logo and main navigation -->
     <header class="site-header">
@@ -62,12 +62,12 @@
                     <a class="btn" href="contact.html">Book a tour</a>
                 </div>
 
-                <!-- Wide shot on desktop, closer shot on mobile -->
+                <!-- Wide shot on desktop, closer shot on mobile -->     
                 <picture class="hero__media">
                     <source media="(max-width: 374px)"
                             srcset="assets/images/hero-mobile.jpg">
                     <img src="assets/images/hero-desktop.jpg"
-                         alt="The main hall at Nimbus, with desks along a row of tall windows">
+                        alt="The main hall at Nimbus, with desks along a row of tall windows">
                 </picture>
 
             </div>
@@ -75,89 +75,95 @@
 
         <!-- What Nimbus offers: four services -->
         <section class="services" id="services">
-            <h2 class="services__title">Everything included, nothing to set up</h2>
+            <div class="services__inner">
+                <h2 class="services__title">Everything included, nothing to set up</h2>
 
-            <ul class="services__list">
+                <ul class="services__list">
 
-                <li class="card">
-                    <!-- Two sizes, the browser loads the lighter one when it fits -->
-                    <img class="card__image"
-                         src="assets/images/offices-400.jpg"
-                         srcset="assets/images/offices-400.jpg 400w,
-                                 assets/images/offices-800.jpg 800w"
-                         sizes="(max-width: 767px) 100vw, 25vw"
-                         alt="A private office with a table for six people">
-                    <p class="card__text">
-                        Private offices for teams of two to twelve, furnished
-                        and ready on your first morning.
-                    </p>
-                </li>
+                    <li class="card">
+                        <!-- Two sizes, the browser loads the lighter one when it fits -->
+                        <img class="card__image"
+                            src="assets/images/offices-400.jpg"
+                            srcset="assets/images/offices-400.jpg 400w,
+                                    assets/images/offices-800.jpg 800w"
+                            sizes="225px"
+                            alt="A private office with a table for six people">
+                        <p class="card__text">
+                            Private offices for teams of two to twelve, furnished
+                            and ready on your first morning.
+                        </p>
+                    </li>
 
-                <li class="card">
-                    <img class="card__image"
-                         src="assets/images/desks-400.jpg"
-                         srcset="assets/images/desks-400.jpg 400w,
-                                 assets/images/desks-800.jpg 800w"
-                         sizes="(max-width: 767px) 100vw, 25vw"
-                         alt="Open desks facing a window in the main hall">
-                    <p class="card__text">
-                        Open desks in the main hall. Take any free spot, or
-                        keep the same one every day.
-                    </p>
-                </li>
+                    <li class="card">
+                        <img class="card__image"
+                            src="assets/images/desks-400.jpg"
+                            srcset="assets/images/desks-400.jpg 400w,
+                                    assets/images/desks-800.jpg 800w"
+                            sizes="225px"
+                            alt="Open desks facing a window in the main hall">
+                        <p class="card__text">
+                            Open desks in the main hall. Take any free spot, or
+                            keep the same one every day.
+                        </p>
+                    </li>
 
-                <li class="card">
-                    <img class="card__image"
-                         src="assets/images/meeting-400.jpg"
-                         srcset="assets/images/meeting-400.jpg 400w,
-                                 assets/images/meeting-800.jpg 800w"
-                         sizes="(max-width: 767px) 100vw, 25vw"
-                         alt="A meeting room with a screen and a whiteboard">
-                    <p class="card__text">
-                        Meeting rooms by the hour, with a screen, a whiteboard
-                        and enough chairs for everyone.
-                    </p>
-                </li>
+                    <li class="card">
+                        <img class="card__image"
+                            src="assets/images/meeting-400.jpg"
+                            srcset="assets/images/meeting-400.jpg 400w,
+                                    assets/images/meeting-800.jpg 800w"
+                            sizes="225px"
+                            alt="A meeting room with a screen and a whiteboard">
+                        <p class="card__text">
+                            Meeting rooms by the hour, with a screen, a whiteboard
+                            and enough chairs for everyone.
+                        </p>
+                    </li>
 
-                <li class="card">
-                    <img class="card__image"
-                         src="assets/images/community-400.jpg"
-                         srcset="assets/images/community-400.jpg 400w,
-                                 assets/images/community-800.jpg 800w"
-                         sizes="(max-width: 767px) 100vw, 25vw"
-                         alt="Members having lunch together in the Nimbus kitchen">
-                    <p class="card__text">
-                        Workshops, Friday lunches and a members' directory that
-                        people actually use.
-                    </p>
-                </li>
+                    <li class="card">
+                        <img class="card__image"
+                            src="assets/images/community-400.jpg"
+                            srcset="assets/images/community-400.jpg 400w,
+                                    assets/images/community-800.jpg 800w"
+                            sizes="225px"
+                            alt="Members having lunch together in the Nimbus kitchen">
+                        <p class="card__text">
+                            Workshops, Friday lunches and a members' directory that
+                            people actually use.
+                        </p>
+                    </li>
 
-            </ul>
+                </ul>
+        </div>
         </section>
 
         <!-- Member testimonial -->
         <section class="quote" id="members">
-            <figure class="quote__figure">
-                <blockquote class="quote__text">
-                    We booked three months here while our own office was being
-                    rebuilt. Two years later we have not left, and we have
-                    hired four people we first met in the kitchen.
-                </blockquote>
-                <figcaption class="quote__author">- Léa Moreau, Atelier Vega</figcaption>
-            </figure>
+            <div class="quote__inner">
+                <figure class="quote__figure">
+                    <blockquote class="quote__text">
+                        We booked three months here while our own office was being
+                        rebuilt. Two years later we have not left, and we have
+                        hired four people we first met in the kitchen.
+                    </blockquote>
+                    <figcaption class="quote__author">- Léa Moreau, Atelier Vega</figcaption>
+                </figure>
+            </div>
         </section>
 
         <!-- Free day pass offer -->
         <section class="cta" id="join">
             <div class="cta__inner">
-                <div class="cta__content">
-                    <h2 class="cta__title">Try a day before you decide</h2>
-                    <p class="cta__text">
-                        Your first day pass is on us. Bring your laptop, we
-                        handle the rest.
-                    </p>
+                <div class="cta__card">
+                    <div class="cta__content">
+                        <h2 class="cta__title">Try a day before you decide</h2>
+                        <p class="cta__text">
+                            Your first day pass is on us. Bring your laptop, we
+                            handle the rest.
+                        </p>
+                    </div>
+                    <a class="btn btn--outline" href="contact.html">Claim a free day</a>
                 </div>
-                <a class="btn btn--outline" href="contact.html">Claim a free day</a>
             </div>
         </section>
 
