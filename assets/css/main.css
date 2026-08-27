@@ -90,7 +90,8 @@ main {
 /* GLOBAL TEXT STYLES - add classes with the same styles here */
 
 /* hero text style */
-.hero__title {
+.hero__title,
+.page-intro__title {
   font-size: var(--font-size-main);
   font-weight: var(--font-extra-bold);
   line-height: 1.1;
@@ -103,26 +104,6 @@ main {
   font-weight: var(--font-extra-bold);
   text-align: center;
   line-height: 1.2;
-}
-
-/* SKIP LINK */
-
-.skip-link {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  padding: 8px 16px;
-
-  background-color: var(--color-light);
-  color: var(--color-dark);
-  text-decoration: none;
-
-  transform: translateY(-100%);
-}
-
-.skip-link:focus {
-  transform: translateY(0);
 }
 
 /* COMPONENT STYLES */
@@ -281,4 +262,35 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* page intro - dark banner at the top of secondary pages */
+.page-intro {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.page-intro__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 70px 20px 80px;
+}
+
+.page-intro__text {
+  max-width: 640px;
+
+  color: var(--color-secondary);
+  line-height: 1.4;
+}
+
+@media (max-width: 767px) {
+  .page-intro__title {
+    font-size: var(--font-size-main);
+  }
+}
+
+@media (max-width: 374px) {
+  .page-intro__title {
+    font-size: var(--font-size-large);
+  }
 }
