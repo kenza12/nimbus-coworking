@@ -20,7 +20,8 @@
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-  color: var(--color-dark)
+  color: var(--color-dark);
+  user-select: none;
 }
 
 h1 {
@@ -44,6 +45,11 @@ h1 {
   border: 2px solid var(--color-accent);
   border-radius: 10px;
   padding: 10px;
+  transition: all 0.5s;
+}
+
+.plan:hover {
+  transform: scale(1.1);
 }
 
 .plan__title, .plan__price {
