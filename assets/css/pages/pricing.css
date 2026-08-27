@@ -18,10 +18,9 @@
   padding-top: 100px;
   padding-bottom: 20px;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
   color: var(--color-dark);
-  user-select: none;
 }
 
 h1 {
@@ -29,7 +28,7 @@ h1 {
   font-size: var(--font-size-main);
 }
 
-.plan__auditory {
+.plans__auditory {
   font-size: var(--font-size-large);
 }
 
