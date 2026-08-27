@@ -289,12 +289,12 @@ main {
 
 @media (max-width: 767px) {
   .page-intro__title {
-    font-size: 44px;
+    font-size: var(--font-size-main);
   }
 }
 
 @media (max-width: 374px) {
   .page-intro__title {
-    font-size: 36px;
+    font-size: var(--font-size-large);
   }
 }

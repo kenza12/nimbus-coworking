@@ -95,6 +95,7 @@
 
   color: var(--color-dark);
   font-weight: 700;
+  font-style: normal;
 }
 
 .details__value {
@@ -219,7 +220,6 @@
 .walk-in__link:focus-visible {
   text-decoration: underline;
 }
-
 
 /* TABLET AND MOBILE */
 
