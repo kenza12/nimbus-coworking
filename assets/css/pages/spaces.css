@@ -53,7 +53,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 40px;
 }
 
 .space-card {
@@ -155,7 +155,7 @@
 
 
 @media (min-width: 768px) {
-  
+
 
   /* SPACES */
 
@@ -167,7 +167,7 @@
   /* SPACES LIST */
 
   .spaces-list__inner {
-    padding: 55px 0 75px;
+    padding: 55px 20px 75px;
   }
 
   .space-card {
@@ -179,7 +179,7 @@
   /* COMMUNITY */
 
   .community__inner {
-    padding: 80px 0;
+    padding: 80px 20px;
 
     flex-direction: row;
   }
