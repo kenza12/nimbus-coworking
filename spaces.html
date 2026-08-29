@@ -42,73 +42,133 @@
     </div>
   </header>
 
-  <main>
-    <h1>Our Spaces</h1>
-    <p>We have flexible workspaces designed for focus, collaboration, and connection. Choose a 
-      workspace that fits the way you work.</p>
+  <main">
 
-    <section>
-      <h2>Find Your Space</h2>
-      <p>All our spaces have high-speed Wi-Fi, power outlets, and access to shared amenities.</p>
-
-      <article>
-        <h3>Private Office</h3>
-        <img src="images/private-office.jpg" alt="Private office with a desk and chair">
-        <p>
-          A quiet, private workspace for individuals or small teams that need
-          a dedicated place to focus.
+    <header class="spaces-intro">
+      <div class="spaces-intro__inner">
+        <h1 class="spaces-intro__title">Our Spaces</h1>
+        <p class="spaces-intro__text">
+          We have flexible workspaces designed for focus, collaboration, and
+          connection. Choose a workspace that fits the way you work.
         </p>
-        <ul>
-          <li>Dedicated desk</li>
-          <li>Lockable private room</li>
-          <li>Quiet workspace environment</li>
-          <li>Ideal for interviews, focused work, and private calls</li>
-        </ul>
-      </article>
+      </div>
+    </header>
 
-      <article>
-        <h3>Open Desk</h3>
-        <img src="images/open-desk.jpg" alt="Open coworking area with shared desks">
-        <p>
-          A flexible workspace in our shared coworking area, perfect for independent work 
-          and meeting other professionals.
-        </p>
-        <ul>
-          <li>Flexible seating (choose any available desk)</li>
-          <li>Casual co-working environment</li>
-          <li>Opportunities for networking</li>
-          <li>Ideal for work, studying and learning</li>
-        </ul>
-      </article>
+    <section class="spaces-list">
+      <div class="spaces-list__inner">
 
-      <article>
-        <h3>Meeting Room</h3>
-        <img src="images/meeting-room.jpg" alt="Meeting room with a table and chairs">
-        <p>
-          A professional space for meetings, interviews, presentations,
-          and collaborative sessions.
-        </p>
-        <ul>
-          <li>Hourly booking available</li>
-          <li>Customisable seating arrangement</li>
-          <li>Presentation and video conferencing equipment</li>
-          <li>Optional pre-meeting technology setup</li>
-        </ul>
-      </article>
+        <div class="spaces-list__header">
+          <h2 class="spaces-list__title">Find Your Space</h2>
+          <p class="spaces-list__intro">
+            All our spaces have high-speed Wi-Fi, power outlets, and access to
+            shared amenities.
+          </p>          
+        </div>
+
+        <div class="spaces-list__items">
+
+          <article class="space-card">
+            <img class="space-card__image"
+                 src="assets/images/offices-400.jpg"
+                 srcset="
+                   assets/images/offices-400.jpg 400w,
+                   assets/images/offices-800.jpg 800w
+                 "
+                 sizes="(min-width: 1200px) 280px,
+                        (min-width: 768px) 30vw,
+                        100vw"
+                 alt="A private office with a desk and chair">
+
+            <h3 class="space-card__title">Private Office</h3>
+
+            <p class="space-card__text">
+              A quiet, private workspace for individuals or small teams that
+              need a dedicated place to focus.
+            </p>
+
+            <ul class="space-card__features">
+              <li>Dedicated desk</li>
+              <li>Lockable private room</li>
+              <li>Quiet workspace environment</li>
+              <li>Ideal for interviews and focused work</li>
+            </ul>
+          </article>
+
+          <article class="space-card">
+            <img class="space-card__image"
+                 src="assets/images/desks-400.jpg"
+                 srcset="
+                   assets/images/desks-400.jpg 400w,
+                   assets/images/desks-800.jpg 800w
+                 "
+                 sizes="(min-width: 1200px) 280px,
+                        (min-width: 768px) 30vw,
+                        100vw"
+                 alt="Open coworking area with shared desks">
+
+            <h3 class="space-card__title">Open Desk</h3>
+
+            <p class="space-card__text">
+              A flexible workspace in our shared coworking area, perfect for
+              independent work and meeting other professionals.
+            </p>
+
+            <ul class="space-card__features">
+              <li>Flexible seating (choose any available desk)</li>
+              <li>Casual co-working environment</li>
+              <li>Opportunities for networking</li>
+              <li>Ideal for work, studying and learning</li>
+            </ul>
+          </article>
+
+          <article class="space-card">
+            <img class="space-card__image"
+                 src="assets/images/meeting-400.jpg"
+                 srcset="
+                   assets/images/meeting-400.jpg 400w,
+                   assets/images/meeting-800.jpg 800w
+                 "
+                 sizes="(min-width: 1200px) 280px,
+                        (min-width: 768px) 30vw,
+                        100vw"
+                 alt="A meeting room with a table and chairs">
+
+            <h3 class="space-card__title">Meeting Room</h3>
+
+            <p class="space-card__text">
+              A professional space for meetings, interviews, presentations,
+              and collaborative sessions.
+            </p>
+
+            <ul class="space-card__features">
+              <li>Hourly booking available</li>
+              <li>Customisable seating arrangement</li>
+              <li>Presentation and video conferencing equipment</li>
+              <li>Optional pre-meeting technology setup</li>
+            </ul>
+          </article>
+
+        </div>
+
+      </div>
     </section>
+
     <section class="community"> 
       <div class="community__inner">
 
         <div class="community__media">
           <img
             class="community__image"
-            src="assets/images/community-400.jpg"
+            src="assets/images/community-2-400.jpg"
             srcset="
-              assets/images/community-400.jpg 400w,
-              assets/images/community-800.jpg 800w
+              assets/images/community-2-400.jpg 400w,
+              assets/images/community-2-800.jpg 800w,
+              assets/images/community-2-1200.jpg 1200w
             "
-            sizes="(max-width: 767px) 100vw, 50vw"
-            alt="Nimbus members having lunch together in the shared kitchen"
+            sizes="(min-width: 1200px) 480px,
+                  (min-width: 768px) 50vw,
+                  100vw"
+            alt="Nimbus members serving themselves from a buffet while people attend a workshop in the background"
           >
         </div>
         
@@ -121,23 +181,23 @@
           </p>
 
           <article class="community__item">
-            <h3>Workshops</h3>
-            <p>
+            <h3 class="community__item-title">Workshops</h3>
+            <p class="community__item-text">
               Join workshops led by Nimbus members and guest speakers.
             </p>
           </article>
 
           <article class="community__item">
-            <h3>Friday Lunches</h3>
-            <p>
+            <h3 class="community__item-title">Friday Lunches</h3>
+            <p class="community__item-text">
               Take a break from your desk and join other members for our weekly
               Friday lunch.
             </p>
           </article>
 
           <article class="community__item">
-            <h3>Members' Directory</h3>
-            <p>
+            <h3 class="community__item-title">Members' Directory</h3>
+            <p class="community__item-text">
               Discover who else works at Nimbus, what they do, and how you might
               connect or collaborate.
             </p>
@@ -146,9 +206,11 @@
 
       </div>
     </section>
+
   </main>
+
   <footer class="site-footer">
     <p class="site-footer__text">Copyright © 2026 Nimbus Coworking</p>
-</footer>
+  </footer>
 </body>
 </html>
