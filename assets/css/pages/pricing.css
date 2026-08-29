@@ -1,8 +1,11 @@
-.plans, .plans__wrapper, .plan {
+.plans,
+.plans__wrapper,
+.plan {
   display: flex;
 }
 
-.plans, .plan {
+.plans,
+.plan {
   flex-direction: column;
 }
 
@@ -44,7 +47,8 @@ main {
   transform: scale(1.03);
 }
 
-.plan__title, .plan__price {
+.plan__title,
+.plan__price {
   font-size: var(--font-size-medium);
 }
 
@@ -74,7 +78,7 @@ main {
     justify-content: start;
   }
 
-  .pricing__cta{
+  .pricing__cta {
     text-align: start;
   }
 }
