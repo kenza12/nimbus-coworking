@@ -290,6 +290,10 @@ main {
   padding: 70px 20px 80px;
 }
 
+.page-intro__title {
+  padding-bottom: 20px;
+}
+
 .page-intro__text {
   max-width: 640px;
 
@@ -300,6 +304,10 @@ main {
 @media (max-width: 767px) {
   .page-intro__title {
     font-size: var(--font-size-main);
+  }
+
+  .page-intro__inner {
+    padding-bottom: 45px;
   }
 }
 
