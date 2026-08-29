@@ -78,14 +78,8 @@ body {
   min-height: 100vh;
 }
 
-@media (max-width: 374px) {
-  body {
-    font-size: 18px;
-  }
-}
-
 main {
-  padding-top: 70px; /* top padding to accommodate the header  */
+  padding-top: 72px; /* top padding to accommodate the header  */
 }
 
 /* GLOBAL TEXT STYLES - add classes with the same styles here */
@@ -252,11 +246,12 @@ main {
   .nav-toggle:checked ~ .site-nav {
     display: block;
     position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    margin-top: 200px;
+
     background-color: var(--color-dark);
-    border-bottom: 1px solid var(--color-secondary);
+    border-top: 1px solid var(--color-secondary);
     padding-left: 20px;
   }
 
@@ -303,7 +298,7 @@ main {
   }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 375px) {
   .page-intro__title {
     font-size: var(--font-size-large);
   }
