@@ -33,19 +33,17 @@
   font-style: italic;
 }
 
-
-
 /* VARIABLES */
 
 :root {
   /* color for header, hero and footer background, information header text, quote text and author text */
-  --color-dark: #1F2937;
+  --color-dark: #1f2937;
   /* color for header logo text, header main text, button text, sign up main text, sign up button border */
-  --color-light: #F9FAF8;
+  --color-light: #f9faf8;
   /* color for header secondary text, header links text, information item text, footer text, sign up secondary text */
-  --color-secondary: #E5E7EB;
+  --color-secondary: #e5e7eb;
   /* color for button background, information item image border, sign up background */
-  --color-accent: #3882F6;
+  --color-accent: #3882f6;
   /* font weight for header main text and information header text */
   --font-extra-bold: 800;
   /* font weight for quote text */
@@ -198,11 +196,13 @@ main {
   color: var(--color-light);
 }
 
-.nav-toggle { /* for burger menu */
+.nav-toggle {
+  /* for burger menu */
   display: none;
 }
 
-.nav-toggle__label { /* for burger menu */
+.nav-toggle__label {
+  /* for burger menu */
   display: none;
 }
 
