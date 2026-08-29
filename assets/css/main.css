@@ -122,6 +122,8 @@ main {
   font-weight: 700;
   text-decoration: none;
   min-width: fit-content;
+
+  transition: all linear 0.15s;
 }
 
 .btn:hover,

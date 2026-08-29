@@ -70,6 +70,15 @@
   resize: vertical; /* horizontal resizing would break the layout */
 }
 
+.btn {
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  border-color: var(--color-accent);
+}
+
 /* CONTACT DETAILS */
 
 .details__list {
