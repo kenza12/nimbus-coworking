@@ -1,0 +1,158 @@
+/* SPACES LIST */
+
+.spaces-list {
+  padding: 0 20px;
+}
+
+.spaces-list__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 0 55px;
+}
+
+.spaces-list__title {
+  margin-bottom: 15px;
+}
+
+.spaces-list__intro {
+  max-width: 450px;
+  margin-bottom: 35px;
+
+  color: var(--color-dark);
+  line-height: 1.4;
+}
+
+.spaces-list__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.space-card {
+  flex: 0 1 480px;
+  background: var(--color-secondary);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 18px;
+}
+
+.space-card__title {
+  margin: 30px 0 15px;
+}
+
+.space-card__image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+
+  border: 4px solid var(--color-accent);
+  border-radius: 18px;
+}
+
+.space-card__text {
+  margin-top: 16px;
+
+  color: var(--color-dark);
+  line-height: 1.4;
+}
+
+.space-card__features {
+  margin-top: 18px;
+  padding-left: 20px;
+  font-size: 18px;
+
+  color: var(--color-dark);
+  line-height: 1.4;
+}
+
+.space-card__features li {
+  margin-top: 8px;
+}
+
+/* COMMUNITY */
+
+.community {
+  padding: 0 20px;
+
+  background-color: var(--color-dark);
+  border-bottom: 4px solid var(--color-accent);
+}
+
+.community__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 55px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.community__image {
+  display: block;
+  width: 100%;
+
+  border: 4px solid var(--color-secondary);
+  border-radius: 18px;
+}
+
+.community__content {
+  color: var(--color-secondary);
+}
+
+.community__title {
+  margin-bottom: 20px;
+}
+
+.community__text {
+  margin-bottom: 30px;
+
+  line-height: 1.4;
+}
+
+.community__item {
+  margin-top: 25px;
+}
+
+.community__item-title {
+  margin-bottom: 8px;
+}
+
+.community__item-text {
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  /* SPACES */
+
+  .spaces-intro__inner {
+    padding: 150px 0 65px;
+  }
+
+  /* SPACES LIST */
+
+  .spaces-list__inner {
+    padding: 55px 20px 75px;
+  }
+
+  .space-card {
+    flex: 0 1 440px;
+    padding: 25px;
+  }
+
+  /* COMMUNITY */
+
+  .community__inner {
+    padding: 80px 20px;
+
+    flex-direction: row;
+  }
+
+  .community__media,
+  .community__content {
+    flex: 1;
+  }
+}

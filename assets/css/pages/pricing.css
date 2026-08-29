@@ -1,0 +1,84 @@
+.plans,
+.plans__wrapper,
+.plan {
+  display: flex;
+}
+
+.plans,
+.plan {
+  flex-direction: column;
+}
+
+main {
+  height: 100%;
+  min-height: calc(100vh - 80px);
+  padding-bottom: 20px;
+  color: var(--color-dark);
+}
+
+.plans {
+  max-width: 960px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.plans__auditory {
+  font-size: var(--font-size-large);
+}
+
+.plans__wrapper {
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plan {
+  width: 250px;
+  gap: 10px;
+  border: 2px solid var(--color-accent);
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.plan:hover {
+  transform: scale(1.03);
+}
+
+.plan__title,
+.plan__price {
+  font-size: var(--font-size-medium);
+}
+
+.plan__price {
+  border-bottom: 1px dotted var(--color-accent);
+}
+
+.plan__benefits {
+  list-style: none;
+  line-height: 1.2;
+}
+
+.pricing__cta {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+@media (min-width: 590px) {
+  .plans {
+    align-items: start;
+    gap: 20px;
+  }
+
+  .plans__wrapper {
+    justify-content: start;
+  }
+
+  .pricing__cta {
+    text-align: start;
+  }
+}

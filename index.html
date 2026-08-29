@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nimbus Coworking — Workspaces in the centre of town</title>
+    <meta
+      name="description"
+      content="Private offices, open desks and meeting rooms in the centre of town. Book by the day or by the year."
+    />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/pages/home.css" />
+  </head>
+
+  <body>
+    <!-- Site header: logo and main navigation -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">
+          <img
+            class="site-header__logo-mark"
+            src="assets/images/logo-cloud.svg"
+            alt=""
+          />
+          <span class="site-header__logo-text">Nimbus</span>
+        </a>
+
+        <!-- Burger button, shown on small screens -->
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+        <label class="nav-toggle__label" for="nav-toggle" aria-label="Menu">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </label>
+
+        <nav class="site-nav" aria-label="Main">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html">Home</a></li>
+            <li><a class="site-nav__link" href="spaces.html">Spaces</a></li>
+            <li><a class="site-nav__link" href="pricing.html">Pricing</a></li>
+            <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero: main message and call to action -->
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">Room to do your best work</h1>
+            <p class="hero__subtitle">
+              A desk, a meeting room and a proper coffee machine in the centre
+              of town. Come for a day, stay for a year — you decide, and you can
+              change your mind at the end of any month.
+            </p>
+            <a class="btn" href="contact.html">Book a tour</a>
+          </div>
+
+          <!-- Wide shot on desktop, closer shot on mobile -->
+          <picture class="hero__media">
+            <source
+              media="(max-width: 375px)"
+              srcset="assets/images/hero-mobile.jpg"
+            />
+            <img
+              src="assets/images/hero-desktop.jpg"
+              alt="The main hall at Nimbus, with desks along a row of tall windows"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- What Nimbus offers: four services -->
+      <section class="services" id="services">
+        <div class="services__inner">
+          <h2 class="services__title">
+            Everything included, nothing to set up
+          </h2>
+
+          <ul class="services__list">
+            <li class="card">
+              <!-- Two sizes, the browser loads the lighter one when it fits -->
+              <img
+                class="card__image"
+                src="assets/images/offices-400.jpg"
+                srcset="
+                  assets/images/offices-400.jpg 400w,
+                  assets/images/offices-800.jpg 800w
+                "
+                sizes="225px"
+                alt="A private office with a table for six people"
+              />
+              <p class="card__text">
+                Private offices for teams of two to twelve, furnished and ready
+                on your first morning.
+              </p>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="assets/images/desks-400.jpg"
+                srcset="
+                  assets/images/desks-400.jpg 400w,
+                  assets/images/desks-800.jpg 800w
+                "
+                sizes="225px"
+                alt="Open desks facing a window in the main hall"
+              />
+              <p class="card__text">
+                Open desks in the main hall. Take any free spot, or keep the
+                same one every day.
+              </p>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="assets/images/meeting-400.jpg"
+                srcset="
+                  assets/images/meeting-400.jpg 400w,
+                  assets/images/meeting-800.jpg 800w
+                "
+                sizes="225px"
+                alt="A meeting room with a screen and a whiteboard"
+              />
+              <p class="card__text">
+                Meeting rooms by the hour, with a screen, a whiteboard and
+                enough chairs for everyone.
+              </p>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="assets/images/community-400.jpg"
+                srcset="
+                  assets/images/community-400.jpg 400w,
+                  assets/images/community-800.jpg 800w
+                "
+                sizes="225px"
+                alt="Members having lunch together in the Nimbus kitchen"
+              />
+              <p class="card__text">
+                Workshops, Friday lunches and a members' directory that people
+                actually use.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Member testimonial -->
+      <section class="quote" id="members">
+        <div class="quote__inner">
+          <figure class="quote__figure">
+            <blockquote class="quote__text">
+              We booked three months here while our own office was being
+              rebuilt. Two years later we have not left, and we have hired four
+              people we first met in the kitchen.
+            </blockquote>
+            <figcaption class="quote__author">
+              - Léa Moreau, Atelier Vega
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Free day pass offer -->
+      <section class="cta" id="join">
+        <div class="cta__inner">
+          <div class="cta__card">
+            <div class="cta__content">
+              <h2 class="cta__title">Try a day before you decide</h2>
+              <p class="cta__text">
+                Your first day pass is on us. Bring your laptop, we handle the
+                rest.
+              </p>
+            </div>
+            <a class="btn btn--outline" href="contact.html">Claim a free day</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__text">Copyright © 2026 Nimbus Coworking</p>
+    </footer>
+  </body>
+</html>

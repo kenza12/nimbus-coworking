@@ -1,0 +1,315 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* VARIABLES */
+
+:root {
+  /* color for header, hero and footer background, information header text, quote text and author text */
+  --color-dark: #1f2937;
+  /* color for header logo text, header main text, button text, sign up main text, sign up button border */
+  --color-light: #f9faf8;
+  /* color for header secondary text, header links text, information item text, footer text, sign up secondary text */
+  --color-secondary: #e5e7eb;
+  /* color for button background, information item image border, sign up background */
+  --color-accent: #3882f6;
+  /* font weight for header main text and information header text */
+  --font-extra-bold: 800;
+  /* font weight for quote text */
+  --font-light: 300;
+  /* font size for hero main text */
+  --font-size-main: 48px;
+  /* font size for information header text and quote text */
+  --font-size-large: 36px;
+  /* font size for logo text */
+  --font-size-medium: 24px;
+  /* font size for hero secondary and header link text */
+  --font-size-small: 18px;
+  /* font size for header logo text */
+  --font-size-logo: 24px;
+}
+
+/* RESETS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* BASE TEXT STYLES */
+
+body {
+  font-size: var(--font-size-small);
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 72px; /* top padding to accommodate the header  */
+}
+
+/* GLOBAL TEXT STYLES - add classes with the same styles here */
+
+/* hero text style */
+.hero__title,
+.page-intro__title {
+  font-size: var(--font-size-main);
+  font-weight: var(--font-extra-bold);
+  line-height: 1.1;
+}
+
+/* header text style */
+.services__title {
+  color: var(--color-dark);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-extra-bold);
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* COMPONENT STYLES */
+
+/* buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 28px;
+
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  border-radius: 6px;
+
+  color: var(--color-light);
+  font-weight: 700;
+  text-decoration: none;
+  min-width: fit-content;
+
+  transition: all linear 0.15s;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: var(--color-light);
+  border-color: var(--color-light);
+  color: var(--color-accent);
+}
+
+.btn--outline {
+  background-color: transparent;
+  border-color: var(--color-light);
+  color: var(--color-light);
+}
+
+.btn--outline:hover,
+.btn--outline:focus-visible {
+  background-color: var(--color-light);
+  color: var(--color-accent);
+}
+
+/* header */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background-color: var(--color-dark);
+}
+
+.site-header__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 22px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+}
+
+.site-header__logo-mark {
+  display: block;
+  height: 28px;
+  width: auto;
+}
+
+/* Header Logo Text: 24px #F9FAF8 */
+.site-header__logo-text {
+  color: var(--color-light);
+  font-size: var(--font-size-logo);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.site-nav__list {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.site-nav__link {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus-visible {
+  color: var(--color-light);
+}
+
+.nav-toggle {
+  /* for burger menu */
+  display: none;
+}
+
+.nav-toggle__label {
+  /* for burger menu */
+  display: none;
+}
+
+@media (max-width: 600px) {
+  /* CSS-only navigation */
+
+  .nav-toggle__label {
+    width: 30px;
+    height: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+  }
+
+  .nav-toggle__bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--color-secondary);
+    border-radius: 2px;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .site-nav__list {
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 0 15px;
+    width: 100%;
+  }
+
+  .site-nav__link {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .nav-toggle:checked ~ .site-nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    background-color: var(--color-dark);
+    border-top: 1px solid var(--color-secondary);
+    padding-left: 20px;
+  }
+
+  .site-header__inner {
+    flex-wrap: wrap;
+  }
+}
+
+/* footer */
+.site-footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+
+  height: 80px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* page intro - dark banner at the top of secondary pages */
+.page-intro {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.page-intro__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 70px 20px 80px;
+}
+
+.page-intro__title {
+  padding-bottom: 20px;
+}
+
+.page-intro__text {
+  max-width: 640px;
+
+  color: var(--color-secondary);
+  line-height: 1.4;
+}
+
+@media (max-width: 767px) {
+  .page-intro__title {
+    font-size: var(--font-size-main);
+  }
+
+  .page-intro__inner {
+    padding-bottom: 45px;
+  }
+}
+
+@media (max-width: 375px) {
+  .page-intro__title {
+    font-size: var(--font-size-large);
+  }
+}
