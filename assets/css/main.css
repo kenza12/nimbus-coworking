@@ -78,12 +78,6 @@ body {
   min-height: 100vh;
 }
 
-@media (max-width: 374px) {
-  body {
-    font-size: 18px;
-  }
-}
-
 main {
   padding-top: 70px; /* top padding to accommodate the header  */
 }
@@ -303,7 +297,7 @@ main {
   }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 375px) {
   .page-intro__title {
     font-size: var(--font-size-large);
   }
