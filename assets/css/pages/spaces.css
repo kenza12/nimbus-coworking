@@ -53,7 +53,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 80px;
 }
 
 .space-card {
@@ -155,7 +155,7 @@
 
 
 @media (min-width: 768px) {
-  
+
 
   /* SPACES */
 
