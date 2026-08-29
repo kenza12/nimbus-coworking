@@ -246,11 +246,12 @@ main {
   .nav-toggle:checked ~ .site-nav {
     display: block;
     position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    margin-top: 200px;
+
     background-color: var(--color-dark);
-    border-bottom: 1px solid var(--color-secondary);
+    border-top: 1px solid var(--color-secondary);
     padding-left: 20px;
   }
 
